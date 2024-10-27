@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Random Quote Generator</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <!--Greeting-->
+        <div class="my-3">
+            <h2>Hello <span id="name-output"></span></h2>
+        </div>
+
+        <!--Header-->
+        <header class="heading">
+            <h1 class="h1">Random Quote Generator</h1>
+        </header>
+
+        <!--Select Input-->
+        <div>
+            <input list="quote-category-list" 
+            name="quoteCategory" 
+            id="quote-category"
+            placeholder="Select a quote category"
+            class="form-control">
+
+            <datalist id="quote-category-list">
+                <option value="Love Quotes"></option>
+                <option value="Success Quotes"></option>
+                <option value="Leadership Quotes"></option>
+                <option value="Educational Quotes"></option>
+                <option value="Life Quotes"></option>
+            </datalist>
+        </div>
+
+        <!--Quote display-->
+        <div class="my-3 alert alert-success">
+            <p id="quote-output"></p>
+        </div>
+
+        <!--Trigger-->
+        <div class="my-3">
+            <button class="btn btn-primary d-block w-100" id="trigger">
+                Generate
+            </button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
